@@ -88,4 +88,35 @@
 		</plugins>
 	</build>
 
+	<profiles>
+
+		<profile>
+			<id>dev</id>
+
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+			<properties>
+				<environment>Development</environment>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>qa</id>
+
+			<properties>
+				<environment>QA</environment>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>prod</id>
+
+			<properties>
+				<environment>Production</environment>
+			</properties>
+		</profile>
+
+	</profiles>
 </project>
