@@ -112,7 +112,25 @@
 				<version>3.1.4</version>
 			</plugin>
 
+			<plugin>
+				<groupId>com.employee</groupId>
+				<artifactId>employee-custom-plugin</artifactId>
+				<version>1.0.0</version>
+
+				<executions>
+					<execution>
+						<id>run-greeting</id>
+						<phase>validate</phase>
+
+						<goals>
+							<goal>greet</goal>
+						</goals>
+					</execution>
+				</executions>
+
+			</plugin>
 		</plugins>
+
 
 	</build>
 
